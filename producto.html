@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mi tienda en línea</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body class="colorFondo">
+    <div class="container my-5">
+        <div class="row">
+            <div class="col">
+                <ul class="nav d-flex align-items-center">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html" onclick="verProductosPorCategoria('todos')"><img src="https://www.themarkethink.com/wp-content/uploads/2020/08/mi-tienda-online-belcorp.jpg" alt="Mi tienda en línea" width="90"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link colorFuente roboto-black" href="index.html" onclick="verProductosPorCategoria('todos')">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link colorFuente roboto-black" href="index.html" onclick="verProductosPorCategoria('granos')">Granos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link colorFuente roboto-black" href="index.html" onclick="verProductosPorCategoria('aceites')">Aceites</a>
+                  </li>
+                </ul>
+            </div>
+            <div class="col text-end">
+                <a href="carrito.html" class="btn colorFondo2 position-relative">
+                    <img src="images/cart2.svg" alt="Carrito" width="24">
+                    <span id="totalCarrito" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                </a>                    
+            </div>
+        </div>
+    </div>
+    <div class="container">
+      <div id="producto"></div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/funciones.js"></script>
+    <script src="js/producto.js"></script>
+  </body>
+</html>
